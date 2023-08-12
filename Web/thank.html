@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: url('https://www.itsfrontporch.com/wp-content/uploads/6359524176194484221446729975_travel-01.jpg') no-repeat center center fixed;
+        background-size: cover;
+      }
+      
+      h1 {
+        text-align: center;
+        color: #4B0082;
+      }
+      
+      form {
+        max-width: 500px;
+        margin: auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px #999;
+      }
+      
+      table {
+        width: 100%;
+      }
+      
+      tr {
+        border-bottom: 1px solid #ddd;
+      }
+      
+      td:first-child {
+        width: 30%;
+        padding: 10px;
+        font-weight: bold;
+      }
+      
+      td:last-child {
+        padding: 10px;
+      }
+      
+      .options {
+        display: flex;
+        align-items: center;
+      }
+      
+      .options label {
+        margin-right: 10px;
+        font-weight: bold;
+      }
+      
+      button {
+        background-color:#4B0082;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      
+      button:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+
+  </head>
+  <body>
+    <h1>Sign Up</h1>
+    <form>
+      <table>
+        <tr>
+          <td><label for="firstName">First Name</label></td>
+          <td><input type="text" id="firstName" name="firstName" required></td>
+        </tr>
+        <tr>
+          <td><label for="lastName">Last Name</label></td>
+          <td><input type="text" id="lastName" name="lastName" required></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email</label></td>
+          <td><input type="email" id="email" name="email" required></td>
+        </tr>
+        <tr>
+          <td><label for="password">Password</label></td>
+          <td><input type="password" id="password" name="password" required></td>
+        </tr>
+        <tr>
+          <td><label for="phoneNumber">Phone Number</label></td>
+          <td><input type="tel" id="phoneNumber" name="phoneNumber" required></td>
+        </tr>
+        <tr>
+          <td><label>SELECT ONE </label></td>
+          <td>
+            <div class="options">
+              <label for="option1">
+                <input type="radio" id="option1" name="option" value="option1">
+                BUSINESS TRAVEL
+              </label>
+              <label for="option2">
+                <input type="radio" id="option2" name="option" value="option2">
+                TRAVEL ENTHUSIAST
+              </label>
+              <label for="option3">
+                <input type="radio" id="option3" name="option" value="option3">
+                BUDGET TRAVEL
+              </label>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <button type="submit"><li><a href="../tours.html">Submit</a></li></button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
